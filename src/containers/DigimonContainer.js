@@ -5,7 +5,8 @@ const DigimonContainer = () => {
 
     const [digimonList, setDigimonList] = useState([]);
 
-    useEffect(() => fetchDigimon(), []);
+    useEffect(() => {
+        fetchDigimon()},[]);
     
     const fetchDigimon = () => {
         fetch('https://digimon-api.vercel.app/api/digimon')
@@ -17,7 +18,7 @@ const DigimonContainer = () => {
 
         <>
             <h2></h2>
-            <DigimonList/>
+            <DigimonList digimonList={digimonList}/>
         </>
     )
 }

@@ -4,14 +4,17 @@ import Digimon from "./Digimon";
 
 
 
-const DigimonList = () => {
+const DigimonList = ({digimonList}) => {
+
+    const listofDigimon = digimonList.map((digimon, index) => {
+        return <Digimon key={index} digimon={digimon}/>
+    })
 
     return (
         <>
-            <h3>Hello Pet, I'm a DigimonList</h3>
-            <Digimon/> 
+        <ul>{listofDigimon}</ul>
         </>
     )
 }
 
-export default DigimonList
+export default DigimonList;

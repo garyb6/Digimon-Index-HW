@@ -2,13 +2,13 @@ import React from "react";
 
 
 
-const Digimon = () => {
+const Digimon = ({digimon}) => {
 
     return (
         <>
-            <h4>Hello Pet, I'm a Digimon</h4>
+            <li>{digimon.name} {digimon.level}</li>
         </>
     )
 }
 
-export default Digimon
+export default Digimon;
