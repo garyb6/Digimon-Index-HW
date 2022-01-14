@@ -1,13 +1,17 @@
 import React from "react";
+import './DigimonList.css';
 
 
 
-const Digimon = ({digimon}) => {
+const Digimon = ({digimon, onDigimonClick}) => {
 
+    const handleClick = () => onDigimonClick(digimon);
+    
     return (
-        <>
-            <li>{digimon.name} {digimon.level}</li>
-        </>
+        <div className="Name">
+            <li onClick={handleClick}>{digimon.name}
+            </li>
+        </div>
     )
 }
 

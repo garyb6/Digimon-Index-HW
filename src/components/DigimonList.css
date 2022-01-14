@@ -1,0 +1,31 @@
+.fullList{
+    color: white;
+    cursor: pointer;
+    width: min-content;
+}
+li {
+    padding: 5px;
+}
+
+.Name{
+    list-style: none;
+    font: bold 20px/150% Arial, sans-serif;
+    
+}
+
+.ExpandedCard{
+    
+    margin: 20px;
+    background-color: #bc0d02;
+    color: white;
+    padding: 2%;
+    align-self: center;
+    width:max-content;
+    height:max-content;
+    box-sizing:content-box;
+    font-size: 20px;
+    border-radius: 25px 25px;
+    display:list-item;
+    list-style: none;
+    justify-content:space-evenly;
+}
